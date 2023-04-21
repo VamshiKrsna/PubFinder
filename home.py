@@ -6,9 +6,9 @@ import pandas as pd
 st.title("GetHigh 🍻")  
 
 st.markdown("Are you over 18 ? ")
-sus = Image.open('..\Material\sus.jpg')
-getin = Image.open('..\Material\getin.jpg')
-home = Image.open('..\Material\home.jpg')
+sus = Image.open('Material\sus.jpg')
+getin = Image.open('Material\getin.jpg')
+home = Image.open('Material\home.jpg')
 
 st.image(sus)
 button = st.button("Hell Yeah !")
