@@ -1,12 +1,19 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+IMAGE_PATH = os.path.join(BASE_DIR, 'Material', 'sus.jpg')
+GETIN = os.path.join(BASE_DIR, 'Material', 'getin.jpg') 
+HOME = os.path.join(BASE_DIR, 'Material', 'home.jpg')
+
+sus = Image.open(IMAGE_PATH)
+getin = Image.open(GETIN)
+home = Image.open(IMAGE_PATH)
 
 st.markdown("Are you over 18 ? ")
-sus = Image.open('..\Material\sus.jpg')
-getin = Image.open('..\Material\getin.jpg')
-home = Image.open('..\Material\home.jpg')
 st.image(sus)
 button = st.button("Hell Yeah !")
 
